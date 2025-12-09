@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "a681db0b-6f08-428b-9a0d-883798d919cf",
+		"name": "libbyMahadavLibraryNew",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49580457",
+		"_collection_link": "https://libbymdv-4505231.postman.co/workspace/libbymdv's-Workspace~5375e2af-e093-4c18-871f-188bbe234215/collection/49580457-a681db0b-6f08-428b-9a0d-883798d919cf?action=share&source=collection_link&creator=49580457"
+	},
+	"item": [
+		{
+			"name": "1_addUser1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\":\"321654987\",\r\n\"name\":\"Sara\",\r\n\"birthDate\":\"2009-03-03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2_addUser2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\":\"444444444\",\r\n\"name\":\"Tehilah\",\r\n\"birthDate\":\"2012-03-03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3_showAllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\":\"321654987\",\r\n\"name\":\"Sara\",\r\n\"birthDate\":\"02/10/2009\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/getAllUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4_addBook1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"bookName\":\"Abandond\",\r\n\"authorName\":\"Maya\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/addBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"addBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5_addBook2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"bookName\":\"The Outcast\",\r\n\"authorName\":\"Maya Keynan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/addBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"addBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6_addBook3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"bookName\":\"Hundred Keys\",\r\n\"authorName\":\"Rachel Shorr\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/addBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"addBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7_showAllBoks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"bookName\":\"Hundred Keys\",\r\n\"authorName\":\"Rachel Shorr\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/getAllBooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"getAllBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8_addBorrow1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"bookId\":\"6938551ec8fb113bcd321f9d\",\r\n\"userId\":\"321654987\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/borrows/addBorrow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"borrows",
+						"addBorrow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9_addBorrow2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"bookId\":\"6938555ac8fb113bcd321f9f\",\r\n\"userId\":\"321654987\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/borrows/addBorrow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"borrows",
+						"addBorrow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10_addBorrow3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"bookId\":\"69387d0dea6000ac02f20ea5\",\r\n\"userId\":\"444444444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/borrows/addBorrow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"borrows",
+						"addBorrow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11_showBorrowsById1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"bookName\":\"The small house\",\r\n\"authorName\":\"Sara\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/borrows/getBorrowById/321654987",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"borrows",
+						"getBorrowById",
+						"321654987"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12_showBorrowsById2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/borrows/getBorrowById/444444444",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"borrows",
+						"getBorrowById",
+						"444444444"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
